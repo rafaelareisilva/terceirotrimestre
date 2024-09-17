@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="terceirotrimestre.MainPage">
+
+    <Grid Margin="10">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2" /> 
+            <RowDefinition Height="100" />  
+            <RowDefinition Height="50" />  
+            <RowDefinition Height="50" />  
+            <RowDefinition Height="50" />  
+            <RowDefinition Height="50" />  
+            <RowDefinition Height="100" />  
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        
+        <Image Grid.Row="0" 
+               Grid.ColumnSpan="3" 
+                 />
+
+        
+        <Label Grid.Row="1" 
+               Grid.ColumnSpan="3"  
+               FontSize="16" />
+
+        
+        <Button x:Name="resposta1"
+                Grid.Row="2" 
+                Grid.ColumnSpan="3" 
+                 Margin="5" />
+
+        <Button Grid.Row="3" 
+                Grid.ColumnSpan="3" 
+                Margin="5"
+                x:Name="resposta2" />
+
+        <Button Grid.Row="4" 
+                Grid.ColumnSpan="3"  
+                Margin="5"
+                x:Name="resposta3" />
+
+        <Button Grid.Row="5" 
+                Grid.ColumnSpan="3" 
+                Margin="5"
+                x:Name="resposta4" />
+
+        <Button Grid.Row="6" 
+                Grid.Column="0" 
+                Margin="5"
+                x:Name="resposta5" />
+
+        <Button Grid.Row="6" 
+                Grid.Column="1"   
+                Margin="5" />
+
+        <Button Grid.Row="6" 
+                Grid.Column="2"  
+                Margin="5" />
+    </Grid>
+</ContentPage>
