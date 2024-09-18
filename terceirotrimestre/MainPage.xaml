@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="terceirotrimestre.MainPage">
+             x:Class="terceirotrimestre.MainPage"
+             Background="#120126">
 
     <Grid Margin="10">
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="2" /> 
-            <RowDefinition Height="100" />  
-            <RowDefinition Height="50" />  
-            <RowDefinition Height="50" />  
-            <RowDefinition Height="50" />  
-            <RowDefinition Height="50" />  
-            <RowDefinition Height="100" />  
+            <RowDefinition Height="4*" /> 
+            <RowDefinition Height="1*" />  
+            <RowDefinition Height="1*" />  
+            <RowDefinition Height="1*" />  
+            <RowDefinition Height="1*" />  
+            <RowDefinition Height="1*" />  
+            <RowDefinition Height="1*" />  
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -24,45 +26,69 @@
         
         <Image Grid.Row="0" 
                Grid.ColumnSpan="3" 
-                 />
+               Source="quiz.png"
+               Aspect="Fill"
+              />
 
         
         <Label Grid.Row="1" 
                Grid.ColumnSpan="3"  
-               FontSize="16" />
+               FontSize="16"
+               Text="jnjsen" 
+               TextColor="white"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               />
 
         
         <Button x:Name="resposta1"
                 Grid.Row="2" 
                 Grid.ColumnSpan="3" 
-                 Margin="5" />
+                 Margin="5"
+                 Background="#520f50" />
 
         <Button Grid.Row="3" 
                 Grid.ColumnSpan="3" 
                 Margin="5"
-                x:Name="resposta2" />
+                x:Name="resposta2"
+                 Background="#520f50" />
 
         <Button Grid.Row="4" 
                 Grid.ColumnSpan="3"  
                 Margin="5"
-                x:Name="resposta3" />
+                x:Name="resposta3"
+                 Background="#520f50" />
 
         <Button Grid.Row="5" 
                 Grid.ColumnSpan="3" 
                 Margin="5"
-                x:Name="resposta4" />
+                x:Name="resposta4"
+                 Background="#520f50" />
 
-        <Button Grid.Row="6" 
+        <Button Grid.Row="7" 
                 Grid.Column="0" 
                 Margin="5"
-                x:Name="resposta5" />
+                x:Name="resposta5"
+                Text="CARTAS"
+                 Background="#520f50" />
 
-        <Button Grid.Row="6" 
+        <Button Grid.Row="7" 
                 Grid.Column="1"   
-                Margin="5" />
+                Margin="5" 
+                Text="RETIRE 1 ERRADO"
+                
+                 Background="#520f50"/>
+
+
+        <Button Grid.Row="7" 
+                Grid.Column="2"   
+                Margin="5"
+                Text="UNIVERSITÁRIOS"
+                 Background="#520f50" />
 
         <Button Grid.Row="6" 
-                Grid.Column="2"  
-                Margin="5" />
+                Grid.ColumnSpan="3"   
+                Margin="5"
+                 Background="#520f50"/>
     </Grid>
 </ContentPage>
