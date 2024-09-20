@@ -18,7 +18,7 @@ namespace terceirotrimestre
         private Button ButtonResposta5;
 
 
-        public void ConfiguraEstruturaDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
+        public void ConfiguraDesenho(Label labelpergunta, Button button1, Button button2, Button button3, Button button4, Button button5)
         {
             Labelpergunta = labelpergunta;
             ButtonResposta1 = button1;

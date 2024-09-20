@@ -38,10 +38,11 @@
                TextColor="white"
                VerticalOptions="Center"
                HorizontalOptions="Center"
+               x:Name="labelPergunta"
                />
 
         
-        <Button x:Name="resposta1"
+        <Button x:Name="ButtonResposta1"
                 Grid.Row="2" 
                 Grid.ColumnSpan="3" 
                  Margin="5"
@@ -50,25 +51,25 @@
         <Button Grid.Row="3" 
                 Grid.ColumnSpan="3" 
                 Margin="5"
-                x:Name="resposta2"
+                x:Name="ButtonResposta2"
                  Background="#520f50" />
 
         <Button Grid.Row="4" 
                 Grid.ColumnSpan="3"  
                 Margin="5"
-                x:Name="resposta3"
+                x:Name="ButtonResposta3"
                  Background="#520f50" />
 
         <Button Grid.Row="5" 
                 Grid.ColumnSpan="3" 
                 Margin="5"
-                x:Name="resposta4"
+                x:Name="ButtonResposta4"
                  Background="#520f50" />
 
         <Button Grid.Row="7" 
                 Grid.Column="0" 
                 Margin="5"
-                x:Name="resposta5"
+                x:Name="ButtonResposta5"
                 Text="CARTAS"
                  Background="#520f50" />
 
