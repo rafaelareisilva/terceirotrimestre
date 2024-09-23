@@ -11,10 +11,25 @@ public partial class MainPage : ContentPage
 
 		Gerenciador=new Gerenciador(labelPergunta, ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5);
 	}
-
-	private void OnCounterClicked(object sender, EventArgs e)
+	 void ButtonResposta01(object sender, EventArgs args)
 	{
-		
+		Gerenciador.VerificaCorreta(1);
+	}
+	void ButtonResposta02(object sender, EventArgs args)
+	{
+		Gerenciador.VerificaCorreta(2);
+	}
+	void ButtonResposta03(object sender, EventArgs args)
+	{
+		Gerenciador.VerificaCorreta(3);
+	}
+	void ButtonResposta04(object sender, EventArgs args)
+	{
+		Gerenciador.VerificaCorreta(4);
+	}
+	void ButtonResposta05(object sender, EventArgs args)
+	{
+		Gerenciador.VerificaCorreta(5);
 	}
 }
 

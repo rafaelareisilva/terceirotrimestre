@@ -45,51 +45,57 @@
         <Button x:Name="ButtonResposta1"
                 Grid.Row="2" 
                 Grid.ColumnSpan="3" 
-                 Margin="5"
-                 Background="#520f50" />
+                Margin="5"
+                Background="#520f50"
+                Clicked="ButtonResposta01" />
 
         <Button Grid.Row="3" 
                 Grid.ColumnSpan="3" 
                 Margin="5"
                 x:Name="ButtonResposta2"
-                 Background="#520f50" />
+                Background="#520f50"
+                Clicked="ButtonResposta02" />
 
         <Button Grid.Row="4" 
                 Grid.ColumnSpan="3"  
                 Margin="5"
                 x:Name="ButtonResposta3"
-                 Background="#520f50" />
+                Background="#520f50"
+                Clicked="ButtonResposta03" />
 
         <Button Grid.Row="5" 
                 Grid.ColumnSpan="3" 
                 Margin="5"
                 x:Name="ButtonResposta4"
-                 Background="#520f50" />
+                Background="#520f50"
+                Clicked="ButtonResposta04" />
+
+        <Button Grid.Row="6" 
+                Grid.ColumnSpan="3"   
+                Margin="5"
+                Background="#520f50"                
+                x:Name="ButtonResposta5"
+                Clicked="ButtonResposta05"/>
 
         <Button Grid.Row="7" 
                 Grid.Column="0" 
                 Margin="5"
-                x:Name="ButtonResposta5"
                 Text="CARTAS"
-                 Background="#520f50" />
+                Background="#520f50" />
 
         <Button Grid.Row="7" 
                 Grid.Column="1"   
                 Margin="5" 
-                Text="RETIRE 1 ERRADO"
-                
-                 Background="#520f50"/>
+                Text="RETIRE 1 ERRADO"                
+                Background="#520f50"/>
 
 
         <Button Grid.Row="7" 
                 Grid.Column="2"   
                 Margin="5"
                 Text="UNIVERSITÁRIOS"
-                 Background="#520f50" />
+                Background="#520f50" />
 
-        <Button Grid.Row="6" 
-                Grid.ColumnSpan="3"   
-                Margin="5"
-                 Background="#520f50"/>
+       
     </Grid>
 </ContentPage>
