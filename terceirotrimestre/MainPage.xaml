@@ -16,6 +16,7 @@
             <RowDefinition Height="1*" />  
             <RowDefinition Height="1*" />
             <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -53,6 +54,13 @@
                x:Name="Nivel"
                Grid.Column="2"
                TextColor="White"/>
+
+        <Button Text="VOLTAR"
+                        BackgroundColor="#4287f5"
+                        TextColor="White"
+                        Clicked="ButtonVoltarButtonClicked"
+                        Grid.Row="9"
+                        Grid.Column="0"/>
                
         
         <Button x:Name="ButtonResposta1"
@@ -100,7 +108,7 @@
         <Button Grid.Row="7" 
                 Grid.Column="1"   
                 Margin="5" 
-                Text="RETIRE 1 ERRADO"                
+                Text="RETIRE 3 OPÇÕES"                
                 BackgroundColor="#520f50"
                 Padding="0"/>
 

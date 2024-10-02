@@ -413,7 +413,7 @@ public class Gerenciador
     {
         var numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
         while (ListaQuestoesRespondidas.Contains(numAleat))
-            numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
+        numAleat = Random.Shared.Next(0, ListaQuestoes.Count);
         ListaQuestoesRespondidas.Add(numAleat);
         QuestaoCorrente = ListaQuestoes[numAleat];
         QuestaoCorrente.Desenhar();
