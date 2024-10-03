@@ -30,11 +30,16 @@ namespace terceirotrimestre
         public void Desenhar()
         {
             Labelpergunta.Text = Pergunta;
-            ButtonResposta1.Text = Resposta1;
+            ButtonResposta1.Text = Resposta1;            
             ButtonResposta2.Text = Resposta2;
             ButtonResposta3.Text = Resposta3;
             ButtonResposta4.Text = Resposta4;
             ButtonResposta5.Text = Resposta5;
+            ButtonResposta5.IsVisible=true;
+            ButtonResposta4.IsVisible=true;
+            ButtonResposta3.IsVisible=true;
+            ButtonResposta2.IsVisible=true;
+            ButtonResposta1.IsVisible=true;
 
 
 
@@ -96,6 +101,12 @@ namespace terceirotrimestre
             ButtonResposta3 = button3;
             ButtonResposta4 = button4;
             ButtonResposta5 = button5;
+        }
+
+        public bool equals (Questao q)
+        {
+            return this.Nivelresposta==q.Nivelresposta &&
+            this.Pergunta==q.Pergunta;
         }
 
     }

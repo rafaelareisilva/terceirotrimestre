@@ -8,7 +8,7 @@
 
     <Grid  >
 
-    <Image Source="quiz.png"
+    <Image Source="inicio.png"
                Aspect="AspectFill"
                HorizontalOptions="FillAndExpand"
                VerticalOptions="FillAndExpand"
@@ -20,7 +20,7 @@
                 Clicked="OnButtonIniciarJogoButtonClicked"
                 Text="JOGAR"
             
-                BackgroundColor="#4287f5"
+                BackgroundColor="Purple"
                 FontSize="12"
                 HorizontalOptions="Fill"
                VerticalOptions="End"

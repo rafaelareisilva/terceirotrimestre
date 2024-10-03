@@ -37,5 +37,18 @@ public partial class MainPage : ContentPage
             Application.Current.MainPage = new Telainicial();
 
         }
+	void OnAjudaRetirarClicked (object s, EventArgs e)
+	{
+		var ajuda = new RetiraErrada();
+		ajuda.ConfiguraDesenho(ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5 );
+		ajuda.RealizaAjuda(Gerenciador.GetQuestaoCorrente());
+		(s as Button).IsVisible=false;
+	}
+
+	void OnAjudaPulaClicked (object s, EventArgs e)
+	{
+		Gerenciador.ProximaQuestao();
+		(s as Button).IsVisible=false;
+	}
 }
 

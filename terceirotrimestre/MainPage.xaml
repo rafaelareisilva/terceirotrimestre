@@ -56,7 +56,7 @@
                TextColor="White"/>
 
         <Button Text="VOLTAR"
-                        BackgroundColor="#4287f5"
+                        BackgroundColor="Purple"
                         TextColor="White"
                         Clicked="ButtonVoltarButtonClicked"
                         Grid.Row="9"
@@ -110,15 +110,17 @@
                 Margin="5" 
                 Text="RETIRE 3 OPÇÕES"                
                 BackgroundColor="#520f50"
-                Padding="0"/>
+                Padding="0"
+                Clicked="OnAjudaRetirarClicked"/>
 
 
         <Button Grid.Row="7" 
                 Grid.Column="2"   
                 Margin="5"
-                Text="UNIVERSITÁRIOS"
+                Text="PULAR"
                 BackgroundColor="#520f50" 
-                Padding="0"/>
+                Padding="0"
+                Clicked="OnAjudaPulaClicked"/>
 
        
     </Grid>
