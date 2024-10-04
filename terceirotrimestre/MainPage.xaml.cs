@@ -50,5 +50,13 @@ public partial class MainPage : ContentPage
 		Gerenciador.ProximaQuestao();
 		(s as Button).IsVisible=false;
 	}
+
+	void OnAjudaUniversitariosClicked (object s, EventArgs e)
+	{
+		var ajuda = new Universitarios();
+		ajuda.ConfiguraDesenho(ButtonResposta1, ButtonResposta2, ButtonResposta3, ButtonResposta4, ButtonResposta5 );
+		ajuda.RealizaAjuda(Gerenciador.GetQuestaoCorrente());
+		(s as Button).IsVisible=false;
+	}
 }
 

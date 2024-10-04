@@ -101,9 +101,10 @@
         <Button Grid.Row="7" 
                 Grid.Column="0" 
                 Margin="5"
-                Text="CARTAS"
+                Text="UNIVERSITÁRIOS"
                 BackgroundColor="#520f50"
-                Padding="0" />
+                Padding="0"
+                Clicked="OnAjudaUniversitariosClicked" />
 
         <Button Grid.Row="7" 
                 Grid.Column="1"   
