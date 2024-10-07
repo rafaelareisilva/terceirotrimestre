@@ -3,6 +3,8 @@
 public partial class MainPage : ContentPage
 {
 	 Gerenciador Gerenciador;
+
+	 private int Clickcount;
 	int count = 0;
 
 	public MainPage()
@@ -49,7 +51,20 @@ public partial class MainPage : ContentPage
 	{
 		Gerenciador.ProximaQuestao();
 		(s as Button).IsVisible=false;
+		Clickcount++;
+		if (Clickcount >=3)
+		{
+			(s as Button).IsVisible=false;
+		}
+		else
+		{
+			(s as Button).IsVisible=true;
+		}
+          		
+		
+		
 	}
+	
 
 	void OnAjudaUniversitariosClicked (object s, EventArgs e)
 	{
