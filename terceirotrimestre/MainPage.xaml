@@ -118,7 +118,8 @@
         <Button Grid.Row="7" 
                 Grid.Column="2"   
                 Margin="5"
-                Text="PULAR"
+                Text="PULAR 3x"
+                x:Name="pular3x"
                 BackgroundColor="#520f50" 
                 Padding="0"
                 Clicked="OnAjudaPulaClicked"/>

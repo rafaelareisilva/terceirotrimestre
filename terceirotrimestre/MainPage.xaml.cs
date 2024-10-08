@@ -5,6 +5,7 @@ public partial class MainPage : ContentPage
 	 Gerenciador Gerenciador;
 
 	 private int Clickcount;
+	 private int Clickedpular;
 	int count = 0;
 
 	public MainPage()
@@ -52,6 +53,7 @@ public partial class MainPage : ContentPage
 		Gerenciador.ProximaQuestao();
 		(s as Button).IsVisible=false;
 		Clickcount++;
+		Clickedpular++;
 		if (Clickcount >=3)
 		{
 			(s as Button).IsVisible=false;
@@ -60,10 +62,21 @@ public partial class MainPage : ContentPage
 		{
 			(s as Button).IsVisible=true;
 		}
-          		
-		
-		
+
+	   if (Clickedpular==1)
+	   {
+		 pular3x.Text="PULAR 2x";
+	   }
+	   else if (Clickedpular==2)
+       {
+		 pular3x.Text="PULAR 1x";
+	   }
+	   else if (Clickedpular>=3)
+	   {
+		(s as Button).IsVisible=false;
+	   }
 	}
+	 
 	
 
 	void OnAjudaUniversitariosClicked (object s, EventArgs e)
